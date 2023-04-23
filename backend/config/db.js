@@ -4,7 +4,7 @@ const connectDB = () => {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     }).then(()=>{
-        console.log("yes donkey");
+        console.log("MONGO db connection SUCCESS");
     }).catch((err)=>{
         console.log(err)
     })
