@@ -91,7 +91,7 @@ const getProducts = async (req, res, next) => {
     }
 
     const totalProducts = await Product.countDocuments(query);
-    console.log(query)
+    // console.log(query)
     const products = await Product.find(query)
       .select(select)
       .skip(recordsPerPage * (pageNum - 1))
